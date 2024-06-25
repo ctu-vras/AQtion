@@ -80,6 +80,7 @@ const struct aq_hw_caps_s hw_atl2_caps_aqc113 = {
 			  AQ_NIC_RATE_1G  |
 			  AQ_NIC_RATE_100M      |
 			  AQ_NIC_RATE_10M,
+	.quirks = AQ_NIC_QUIRK_NEED_PTP_FLIP,
 };
 
 const struct aq_hw_caps_s hw_atl2_caps_aqc115c = {
@@ -89,6 +90,7 @@ const struct aq_hw_caps_s hw_atl2_caps_aqc115c = {
 			  AQ_NIC_RATE_1G  |
 			  AQ_NIC_RATE_100M      |
 			  AQ_NIC_RATE_10M,
+	.quirks = AQ_NIC_QUIRK_NEED_PTP_FLIP,
 };
 
 const struct aq_hw_caps_s hw_atl2_caps_aqc116c = {
@@ -97,6 +99,7 @@ const struct aq_hw_caps_s hw_atl2_caps_aqc116c = {
 	.link_speed_msk = AQ_NIC_RATE_1G  |
 			  AQ_NIC_RATE_100M      |
 			  AQ_NIC_RATE_10M,
+	.quirks = AQ_NIC_QUIRK_NEED_PTP_FLIP,
 };
 
 static u32 hw_atl2_sem_act_rslvr_get(struct aq_hw_s *self)
